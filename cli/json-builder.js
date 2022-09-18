@@ -37,7 +37,7 @@ class JsonBuilder extends CLI {
 
             writeFileSync(config.output + '/' + config.file + '.json', JSON.stringify(data))
 
-            console.log(`[+] Created Champions JSON successfully -`, `LowerCaseIds: ${config.lowerCaseIds ? 'true' : 'talse'}`)
+            console.log(`[+] Created Champions JSON successfully -`, `LowerCaseIds: ${config.lowerCaseIds}`)
 
         } catch (err) {
             console.log(`[-] Error creating Champions JSON:`, err)
